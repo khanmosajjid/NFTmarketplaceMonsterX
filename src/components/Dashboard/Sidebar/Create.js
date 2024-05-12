@@ -242,6 +242,7 @@ return false;
   }
   
 };
+
   const [nftId, setNftId] = useState("");
   const imgRef = useRef(null);
 
@@ -395,6 +396,7 @@ return false;
        return;
       
     }
+    console.log("here is creae basic deteails ----->");
     setErrorCuration([]);
     const valid = validateCreateBasicDetails();
     console.log("valid is", valid);
@@ -793,11 +795,6 @@ return false;
   };
 
   const handleCuration = async () => {
-    // const element4 = new bootstrap.Modal(
-    //   document.getElementById("exampleModalToggle4")
-    // );
-    // element4.show();
-    // return;
     const val = params.get("type");
     console.log("value is----->", val);
     if (val === "createCuration") await updateCuration();

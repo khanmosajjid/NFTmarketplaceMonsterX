@@ -351,7 +351,7 @@ function HomePage() {
         <div className="container">
           <div className="section__title text-center">
             <h3>
-              Inspiring <span>{section1?.title}</span> Interviews
+             {section1?.title}
             </h3>
             <p>{section1?.description}</p>
           </div>
@@ -360,7 +360,7 @@ function HomePage() {
               return (
                 <a
                   key={index}
-                  href="https://artistvaultx.wpcomstaging.com/monster-artist/"
+                  href={value?.subtitle2}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="col-lg-4 col-md-6"
@@ -412,6 +412,7 @@ function HomePage() {
                     ]
                   }
                 </span>
+                <p>{nftHeader?.description}</p>
               </h3>
             </div>
             <div className="discover__btn">
@@ -435,9 +436,11 @@ function HomePage() {
         <div className="container">
           <div className="section__title">
             <h3>
-              Exceptional Art <span>Curation</span>
+              {/* Exceptional Art <span>Curation</span> */}
+              {collectionHeader.title}
             </h3>
-            <p>Experience artistic brilliance in curated collections</p>
+            {/* <p>Experience artistic brilliance in curated collections</p> */}
+            <p>{collectionHeader.description}</p>
           </div>
           <div className="exceptional__shape flex justify-center">
             <img src="assets/img/exceptional_shape.png" alt="" />
@@ -566,7 +569,7 @@ function HomePage() {
             <div className="col-xl-7">
               <div className="event__left__thumb">
                 <a
-                  href="https://artistvaultx.wpcomstaging.com/join-the-vaultx-grant-program-web3-educational-events/"
+                  href={section4?.box[0]?.link}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -583,7 +586,7 @@ function HomePage() {
               <div className="news__thumb__blk">
                 <div className="news__thumb">
                   <a
-                    href="https://artistvaultx.wpcomstaging.com/auction-house-sothebys-announces-first-sale-of-bitcoin-ordinals-collection/"
+                    href={section4?.box[1]?.link}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -597,7 +600,7 @@ function HomePage() {
                 </div>
                 <div className="news__thumb">
                   <a
-                    href="https://artistvaultx.wpcomstaging.com/at-art-basel-fashion-and-innovation-get-back-to-business/"
+                    href={section4?.box[2]?.link}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -611,7 +614,7 @@ function HomePage() {
                 </div>
                 <div className="news__thumb">
                   <a
-                    href="https://artistvaultx.wpcomstaging.com/celebrating-art-nfts-h3nsy-hosts-immersive-phygital-experience-at-nfc-lisbon/"
+                    href={section4?.box[3]?.link}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -625,7 +628,7 @@ function HomePage() {
                 </div>
                 <div className="news__thumb">
                   <a
-                    href="https://artistvaultx.wpcomstaging.com/rwa-tokens-know-its-benefits-and-how-it-facilitates-trade/"
+                    href={section4?.box[4]?.link}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -639,7 +642,7 @@ function HomePage() {
                 </div>
                 <div className="news__thumb">
                   <a
-                    href="https://artistvaultx.wpcomstaging.com/tokenized-real-world-assets-are-bringing-new-yield-opportunities-to-defi/"
+                    href={section4?.box[5]?.link}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -653,7 +656,7 @@ function HomePage() {
                 </div>
                 <div className="news__thumb">
                   <a
-                    href="https://artistvaultx.wpcomstaging.com/the-price-of-bitcoin-has-been-dropped-sudden-by-12-3/"
+                    href={section4?.box[6]?.link}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
